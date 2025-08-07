@@ -17,20 +17,14 @@ type Props = {
 };
 
 export default async function SiteLayout({ children }: Props) {
-  const session = await auth();
-  if (!session) {
-    redirect("/auth/signin");
-  }
-
+  // 認証チェックを無効化
   let me: User | null = null;
   try {
     const repository = new UserRepository();
     me = await repository.getMe();
   } catch (error) {
     console.log(error);
-    if (error instanceof AuthError) {
-      redirect("/auth/signin");
-    }
+    // エラーが発生しても続行
   }
 
   const t = await getTranslations("Menu.App");

@@ -4,6 +4,7 @@ import { auth } from "@/libraries/auth";
 
 const PUBLIC_PAGES = [
   "/",
+  "/dashboard",
   "/auth/signin",
   "/auth/signup",
   "/auth/forgot-password",
