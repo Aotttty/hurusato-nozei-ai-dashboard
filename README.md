@@ -1,0 +1,2 @@
+# hurusato-nozei-ai-dashboard
+ふるさと納税の購買データをダッシュボードにしてデータを元にAIが動的に回答してくれるチャットbotを追加
