@@ -140,6 +140,40 @@
     }
   },
   "/* [MODEL_MESSAGES] */": "",
+  "Dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Sales Data Analysis and Visualization",
+    "Stats": {
+      "totalSales": "Total Sales",
+      "totalTransactions": "Total Transactions",
+      "uniqueCustomers": "Unique Customers",
+      "averageOrderValue": "Average Order Value"
+    },
+    "Charts": {
+      "salesTrend": "Sales Trend",
+      "platformComparison": "Platform Sales Comparison",
+      "categoryDistribution": "Category Distribution",
+      "genderDistribution": "Gender Sales Distribution",
+      "ltvAnalysis": "Customer LTV Analysis"
+    },
+    "Tables": {
+      "productRanking": "Product Ranking",
+      "prefectureRanking": "Prefecture Ranking"
+    },
+    "Filters": {
+      "period": "Period",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "dateRange": "Date Range",
+      "selectStartDate": "Select Start Date",
+      "selectEndDate": "Select End Date",
+      "platforms": "Platforms",
+      "ageGroups": "Age Groups",
+      "genders": "Genders",
+      "reset": "Reset"
+    }
+  },
   "Common": {
     "settings": "Settings",
     "signout": "Sign Out"

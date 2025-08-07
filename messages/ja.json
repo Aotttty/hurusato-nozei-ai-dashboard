@@ -140,6 +140,44 @@
     }
   },
   "/* [MODEL_MESSAGES] */": "",
+  "Dashboard": {
+    "title": "ダッシュボード",
+    "subtitle": "売上データの分析と可視化",
+    "Stats": {
+      "totalSales": "総売上",
+      "totalTransactions": "総取引数",
+      "uniqueCustomers": "ユニーク顧客数",
+      "averageOrderValue": "平均注文金額"
+    },
+    "Charts": {
+      "salesTrend": "売上推移",
+      "platformComparison": "プラットフォーム別売上比較",
+      "categoryDistribution": "カテゴリ別構成比",
+      "genderDistribution": "性別別売上構成",
+      "ltvAnalysis": "顧客生涯価値分析"
+    },
+    "LTV": {
+      "repeatRate": "リピート率",
+      "topCustomers": "上位顧客"
+    },
+    "Tables": {
+      "productRanking": "商品ランキング",
+      "prefectureRanking": "都道府県ランキング"
+    },
+    "Filters": {
+      "period": "期間",
+      "daily": "日次",
+      "weekly": "週次",
+      "monthly": "月次",
+      "dateRange": "日付範囲",
+      "selectStartDate": "開始日を選択",
+      "selectEndDate": "終了日を選択",
+      "platforms": "プラットフォーム",
+      "ageGroups": "年代",
+      "genders": "性別",
+      "reset": "リセット"
+    }
+  },
   "Common": {
     "settings": "設定",
     "signout": "ログアウト"
