@@ -51,8 +51,7 @@ async function DashboardStats({ searchParams }: { searchParams?: DashboardOvervi
       <StatCard
         title={t("totalSales")}
         value={`¥${salesSummary.totalSales.toLocaleString()}`}
-        change="+12.5%"
-        changeType="positive"
+        change={{ value: 12.5, isPositive: true }}
         icon={TrendingUpIcon}
         iconColor="text-blue-600"
         dataTestId="total-sales-card"
@@ -60,8 +59,7 @@ async function DashboardStats({ searchParams }: { searchParams?: DashboardOvervi
       <StatCard
         title={t("totalTransactions")}
         value={salesSummary.totalTransactions.toLocaleString()}
-        change="+8.2%"
-        changeType="positive"
+        change={{ value: 8.2, isPositive: true }}
         icon={ShoppingCartIcon}
         iconColor="text-green-600"
         dataTestId="total-transactions-card"
@@ -69,8 +67,7 @@ async function DashboardStats({ searchParams }: { searchParams?: DashboardOvervi
       <StatCard
         title={t("uniqueCustomers")}
         value={salesSummary.uniqueCustomers.toLocaleString()}
-        change="+15.3%"
-        changeType="positive"
+        change={{ value: 15.3, isPositive: true }}
         icon={UsersIcon}
         iconColor="text-purple-600"
         dataTestId="unique-customers-card"
@@ -78,8 +75,7 @@ async function DashboardStats({ searchParams }: { searchParams?: DashboardOvervi
       <StatCard
         title={t("averageOrderValue")}
         value={`¥${salesSummary.averageOrderValue.toLocaleString()}`}
-        change="+5.7%"
-        changeType="positive"
+        change={{ value: 5.7, isPositive: true }}
         icon={DollarSignIcon}
         iconColor="text-orange-600"
         dataTestId="average-order-value-card"
