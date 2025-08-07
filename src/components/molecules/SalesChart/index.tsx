@@ -141,7 +141,7 @@ export function SalesChart({ type, title, data, dataTestId }: SalesChartProps) {
       },
       tooltip: {
         callbacks: {
-          label: function(context: any) {
+          label: function(context: { label?: string; parsed?: number; raw?: number }) {
             const label = context.label || '';
             const value = context.parsed || context.raw;
             

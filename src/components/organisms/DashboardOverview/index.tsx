@@ -10,8 +10,7 @@ import {
   getCustomerAnalysisAction, 
   getProductAnalysisAction, 
   getPrefectureAnalysisAction,
-  getCategoryAnalysisAction,
-  getLTVAnalysisAction 
+  getCategoryAnalysisAction
 } from "@/app/(site)/(authorized)/(app)/dashboard/actions";
 import { 
   TrendingUpIcon, 

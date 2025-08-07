@@ -31,7 +31,7 @@ export class SalesDataRepository extends BaseRepository<typeof SalesDataSchema> 
 
   // プラットフォーム名からIDを取得
   private getPlatformIdByName(name: string): string | undefined {
-    return Object.entries(this.platformMapping).find(([_, platformName]) => platformName === name)?.[0];
+    return Object.entries(this.platformMapping).find(([, platformName]) => platformName === name)?.[0];
   }
 
   // プラットフォームIDから名前を取得
