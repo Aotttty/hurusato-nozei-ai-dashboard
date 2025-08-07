@@ -141,9 +141,11 @@ export function SalesChart({ type, title, data, dataTestId }: SalesChartProps) {
       },
       tooltip: {
         callbacks: {
-          label: function(context: { label?: string; parsed?: number; raw?: number }) {
-            const label = context.label || '';
-            const value = context.parsed || context.raw;
+          label: function(tooltipItem: unknown) {
+            const item = tooltipItem as { label?: string; parsed?: number; raw?: unknown };
+            const label = item.label || '';
+            const value = typeof item.parsed === 'number' ? item.parsed : 
+                         typeof item.raw === 'number' ? item.raw : 0;
             
             // カテゴリ分析の場合はパーセンテージも表示
             if (data.length > 0 && 'category' in data[0]) {
@@ -164,7 +166,7 @@ export function SalesChart({ type, title, data, dataTestId }: SalesChartProps) {
         beginAtZero: true,
       },
     } : undefined,
-  };
+  } as const;
 
   const renderChart = () => {
     switch (type) {
