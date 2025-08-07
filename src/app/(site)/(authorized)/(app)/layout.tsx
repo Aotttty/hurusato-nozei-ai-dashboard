@@ -38,7 +38,7 @@ export default async function SiteLayout({ children }: Props) {
       <Suspense fallback={<div>Loading...</div>}>
         <AppSidebar
           menuItems={menuItems}
-          title="TaskMaster"
+          title="ふるさと納税ダッシュボード"
           icon={<CheckCircle className="w-8 h-8 text-blue-600" />}
           signInUser={me}
           onSignOut={signOutAction}
