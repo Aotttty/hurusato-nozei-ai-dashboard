@@ -3,13 +3,10 @@ import React, { Suspense } from "react";
 import AppSidebar from "@/components/organisms/AppSidebar";
 import Footer from "@/components/organisms/Footer";
 import { UserRepository } from "@/repositories/user_repository";
-import AuthError from "@/exceptions/auth_error";
-import { redirect } from "next/navigation";
 import { User } from "@/models/user";
 import { CheckCircle, Home } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { signOutAction } from "./actions";
-import { auth } from "@/libraries/auth";
 import { SidebarProvider, SidebarTrigger } from "@/components/atoms/sidebar";
 
 type Props = {
